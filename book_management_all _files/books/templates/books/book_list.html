@@ -1,0 +1,10 @@
+\```html
+<h1>Book List</h1>
+<a href="{% url 'add_book' %}">Add New Book</a>
+<ul>
+    {% for book in books %}
+        <li>{{ book.title }} - <a href="{% url 'update_book' book.pk %}">Edit</a> <a href="{% url 'delete_book' book.pk %}">Delete</a></li>
+    {% endfor %}
+</ul>
+```
+---
