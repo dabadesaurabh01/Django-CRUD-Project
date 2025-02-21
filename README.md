@@ -31,14 +31,13 @@ pip install -r requirements.txt
 ```
 
 ###  Configure PostgreSQL Database
-Ensure PostgreSQL is installed and running. Update the `settings.py` file:
-```python
+Ensure PostgreSQL is installed and running. 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'book_db',  # Change if necessary
-        'USER': 'your_postgres_user',
-        'PASSWORD': 'your_password',
+        'NAME': 'saurabh_book_db',
+        'USER': saurabh_user', 
+        'PASSWORD': 'Saurabh@123'
         'HOST': 'localhost',
         'PORT': '5432',
     }
